@@ -23,3 +23,7 @@ This spider will collect all the listing data and by default store all the infor
 For paticular file formats such as json please pass a command line argument requesting a json file with a file name
 
     scrapy crawl listing_scraper -t json -o listing_data.json
+
+##Output files
+[URL.csv](https://github.com/sohamchoudhury18/Houseofindya/blob/master/houseofindya/URL.csv)
+[listing_data.csv](https://github.com/sohamchoudhury18/Houseofindya/blob/master/houseofindya/listing_data_2021-03-23T07-24-34.csv)
