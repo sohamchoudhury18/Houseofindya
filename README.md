@@ -2,6 +2,9 @@
 
 Hello This is a python webscraping project using scrapy web scrapper.
 
+        git clone https://github.com/sohamchoudhury18/Houseofindya.git
+        cd Houseofindya
+
 website scraped - https://www.houseofindya.com/ 
 
 Data Scrapped from the website are necklace sets from jewellery category 
