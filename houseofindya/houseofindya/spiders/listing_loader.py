@@ -9,7 +9,7 @@ class Listingscraper(scrapy.Spider):
     
     allowed_domains = ['houseofindya.com']
 
-    custom_settings={ 'FEED_URI': "listing_data.csv",
+    custom_settings={ 'FEED_URI': "listing_data_%(time)s.csv",
                        'FEED_FORMAT': 'csv'}
 
     start_urls = list(df["URL"])
@@ -40,7 +40,7 @@ class Listingscraper(scrapy.Spider):
         
         ##Images
         img_data = response.css("#productsections").css("img").xpath("@data-original").getall()
-        img_index = ["img1","img2","img3","img4","img5"]
+        img_index = ["img1","img2","img3","img4"]
         img_dict = dict(zip(img_index,img_data))
 
         dict_1 = {"URL":response.url,"Title":title,"Price":price,"Description":product_description,**detail_dict,**img_dict}
